@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.header-tag {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    color: #ceae5efa;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    all: unset;
+}
+
+.form-input {
+    height:1.8em;
+    padding:5px;
+    background-color:#2a2e31;
+    border-radius: .5rem;
+
+}
+
+.form-input:hover, .form-input:focus {
+    border-bottom: 3px solid #b0e0e6;
+    border-radius:0
+}
+
+#workout-input {
+    width: 300px;
+}
+
+.set-reps {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.set-reps h3 {
+    margin-top:8px;
+    color: #008b8b;
+}
+
+#sets-input, #reps-input {
+    text-align: center;
+    font-size: 1em;
+    width: 40px;
+    margin: .8em;
+    margin-top:0;
+}
+
+.submit-btn {
+    width: 310px;
+    height: 2.2rem;
+    margin-top:.2rem;
+    background-color: #008b8b;
+    border-style: none;
+    color:#042c36;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight:700;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color:#b0e0e6;
+    color: #042c36;
+}
+
+.set-span {
+    font-size:.9rem;
+    padding-left:.2em;
+    margin-top:.2em;
+
+}
+
+.workouts {
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:0;
+    max-width: 50%;
+}
+
+p {
+    color:red;
+    min-width: 100%;
+    max-width: min-content;
+}
+
+.workout-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.workouts li {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:2.8rem;
+    width: 15rem;
+    padding: 10px 15px;
+    margin: 0 5px 5px;
+    background-color:#2a2e31;
+    border-radius: .5rem;   
+}
+
+.actions {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-remove {
+    color:#b2605b;
+    background-color: #2a2e31;
+    border-style:none;
+    cursor: pointer;
+    font-size:1.3rem;
+}
+
+.btn-remove:hover {
+    font-size: 1.5rem;
+    border: 1px #b2605b solid;
+    border-radius: .5rem;
+}
+
+.edit-btn {
+    color: #a0d2e8;
+    background-color:#2a2e31;
+    border-style:none;
+    cursor: pointer;
+    font-size:1.2rem;
+    cursor: pointer;
+} 
+
+.edit-btn:hover {
+    font-size: 1.5rem;
+}
+
+.clear-btn {
+    width: 310px;
+    height: 2.2rem;
+    margin-top:0;
+    background-color: #1c1c1c;
+    border-style: none;
+    font-size:1rem;
+    font-weight:700;
+    background-color:#b2605b;
+    border-radius: .5rem;
+    color:#451103;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color:#ceae5efa;
+    border-style: none;
+}
+
+@media (max-width: 550px) {
+    .workouts li {
+        width:12rem;
+    }
+
+    .clear-btn {
+        position:relative;
+    }
+}

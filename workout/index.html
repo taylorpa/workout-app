@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="style.css">
+    <title>Workout App</title>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-dumbbell header-tag"></i>
+        <h3 class="header-tag">Workout App</h3>
+    </header>
+    <div class="container">
+        <form id="workout-form" class="form-box">
+            <div class="form-control">
+                <input 
+                    type="text"
+                    class="form-input"
+                    id="workout-input"
+                    placeholder="Enter workout"
+                    />
+                </div>
+            <div class="set-reps">    
+                    <input 
+                    type="text"
+                    class="form-input"
+                    id="sets-input"
+                    placeholder="Sets"
+                    />
+                    <h3>X</h3>
+                    <input 
+                    type="text"
+                    class="form-input"
+                    id="reps-input"
+                    placeholder="Reps"
+                    />       
+            </div>
+            <div class="form-control">
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-plus"></i> Add workout
+                </button>
+            </div>
+        </form>
+            <ul id = "workout-list" class="workouts">
+
+                
+            </ul>
+
+            <button id="clear" class="clear-btn">Clear All</button>
+    </div>  
+
+      <script src="main.js"></script>
+</body>
+</html><!--
+    <li>
+        <div class="workout-display">
+            Squats
+            <span>3x10</span>
+        </div>
+        <div class="actions">
+            <button class="edit edit-btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>            
+            <button class="remove-workout btn-remove">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </li>
+    <li>
+        <div class="workout-display">
+            Deadlifts 
+            <span class="set-span">3x10</span>
+        </div>
+        <div class="actions">
+            <button class="edit edit-btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </button>            
+            <button class="remove-workout btn-remove">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </li>
+-->
